@@ -115,7 +115,7 @@ public class BookManagement {
     static String userChoice()
     {
       String  user=myScanner.nextLine();
-        return user.trim();
+        return user.trim();    /// .trim() ata use korle space remove hoye jai
 
     }
     static void prln(Object anyObject){

@@ -11,25 +11,30 @@ public class BookManagement {
    
         public static void main(String[] args) {
             prln("================================\n\tBOOKSHOP MANAGEMENT\n================================");
+            while(true){
             prln("Which book do you want?\nAns: ");
             String userChoice= userChoice();
             if(books[0].toLowerCase().equals(userChoice.toLowerCase())){
                 prln("You opted for "+books[0]+"Book.");
                 javacalculatePrice(books[0]);
+                break;
 
             }
             else  if(books[1].toLowerCase().equals(userChoice.toLowerCase())){
                 prln("You opted for "+books[1]+"Book.");
                 c_calculatePrice(books[1]);
+                break;
             }
             else if(books[2].toLowerCase().equals(userChoice.toLowerCase())){
                 prln("You opted for "+books[2]+"Book.");
                 pythoncalculatePrice(books[2]);
+                break;
             }
             else {
                 prln("Sorry ! we haven't that book . try again");
                 
             }
+        }
         
         
     }

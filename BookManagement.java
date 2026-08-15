@@ -1,4 +1,4 @@
-package BookManagement_Java;
+package BookManagement_Java ;
 import java.util.Scanner;
 
 public class BookManagement {
@@ -45,17 +45,17 @@ public class BookManagement {
         
         String Mychoice=userChoice();
         if(Mychoice.toLowerCase().equals("student")){
-            bookPrice[0]= bookPrice[0]- bookPrice[0]*studentDiscout;
-            ShowPrice(bookPrice[0]);
+            double finalPrice= bookPrice[0]- bookPrice[0]*studentDiscout;
+            ShowPrice(finalPrice);
             
         }
         else if(Mychoice.toLowerCase().equals("teacher")){
-            bookPrice[0]= bookPrice[0]- bookPrice[0]*teacherDiscout;
-            ShowPrice(bookPrice[0]);
+            double finalPrice= bookPrice[0]- bookPrice[0]*teacherDiscout;
+            ShowPrice(finalPrice);
         }
         else if (Mychoice.toLowerCase().equals("alien")){
-            bookPrice[0]= bookPrice[0]- bookPrice[0]*alienDiscout;
-            ShowPrice(bookPrice[0]);
+          double  finalPrice= bookPrice[0]- bookPrice[0]*alienDiscout;
+            ShowPrice(finalPrice);
         }
         else{
             prln("Sorry !! you are not eligible this shop !!! ");
@@ -69,17 +69,17 @@ public class BookManagement {
         
         String Mychoice=userChoice();
         if(Mychoice.toLowerCase().equals("student")){
-            bookPrice[1]= bookPrice[1]- bookPrice[1]*studentDiscout;
-            ShowPrice(bookPrice[1]);
+           double  finalPrice= bookPrice[1]- bookPrice[1]*studentDiscout;
+            ShowPrice(finalPrice);
             
         }
         else if(Mychoice.toLowerCase().equals("teacher")){
-            bookPrice[1]= bookPrice[1]- bookPrice[1]*teacherDiscout;
-            ShowPrice(bookPrice[1]);
+            double finalPrice= bookPrice[1]- bookPrice[1]*teacherDiscout;
+            ShowPrice(finalPrice);
         }
         else if (Mychoice.toLowerCase().equals("alien")){
-            bookPrice[1]= bookPrice[1]- bookPrice[1]*alienDiscout;
-            ShowPrice(bookPrice[1]);
+           double finalPrice= bookPrice[1]- bookPrice[1]*alienDiscout;
+            ShowPrice(finalPrice);
         }
         else{
             prln("Sorry !! you are not eligible this shop !!! ");
@@ -94,17 +94,17 @@ public class BookManagement {
         
         String Mychoice=userChoice();
         if(Mychoice.toLowerCase().equals("student")){
-            bookPrice[2]= bookPrice[2]- bookPrice[2]*studentDiscout;
-            ShowPrice(bookPrice[2]);
+            double finalPrice= bookPrice[2]- bookPrice[2]*studentDiscout;
+            ShowPrice(finalPrice);
             
         }
         else if(Mychoice.toLowerCase().equals("teacher")){
-            bookPrice[2]= bookPrice[2]- bookPrice[2]*teacherDiscout;
-            ShowPrice(bookPrice[2]);
+            double finalPrice= bookPrice[2]- bookPrice[2]*teacherDiscout;
+            ShowPrice(finalPrice);
         }
         else if (Mychoice.toLowerCase().equals("alien")){
-            bookPrice[2]= bookPrice[2]- bookPrice[2]*alienDiscout;
-            ShowPrice(bookPrice[2]);
+            double finalPrice= bookPrice[2]- bookPrice[2]*alienDiscout;
+            ShowPrice(finalPrice);
         }
         else{
             prln("Sorry !! you are not eligible this shop !!! ");
@@ -112,7 +112,7 @@ public class BookManagement {
 
         
     }
-
+/// showPrice
     static void ShowPrice(double price){
         prln("Your Total payable amount: "+price);
         prln("\n========THANK YOU FOR SHOPPING FROM OUR BOOKSTORE===========");
